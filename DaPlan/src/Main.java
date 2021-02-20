@@ -15,7 +15,7 @@ public class Main {
 		System.out.println("input:");
 		String input = keyboard.nextLine();
 		String taskName;
-		long taskLength;
+		double taskLength;
 		int levelOfDifficulty;
 		String dueDate;
 		boolean isCompleted;
@@ -28,17 +28,17 @@ public class Main {
 		Date startTime = new Date();
 		String strDate = "23:59:59";
 		Date endTime = df.parse(strDate);
-		long differenceInMilliSeconds = Math.abs(endTime.getTime() - startTime.getTime());
+		double differenceInMilliSeconds = Math.abs(endTime.getTime() - startTime.getTime());
 
 		// Calculating the difference in Hours
-		long differenceInHours = (differenceInMilliSeconds / (60 * 60 * 1000)) % 24;
+		double differenceInHours = (differenceInMilliSeconds / (60 * 60 * 1000)) % 24;
 
 		// essentially asks for info about schedule
 		while (!input.equals("no")) {
 			System.out.println("Enter Task Name");
 			taskName = keyboard.nextLine();
 			System.out.println("Enter task duration");
-			taskLength = keyboard.nextLong();
+			taskLength = keyboard.nextDouble();
 			System.out.println("Enter difficulty of task on a scale of 1 - 5");
 			levelOfDifficulty = keyboard.nextInt();
 			keyboard.nextLine();
