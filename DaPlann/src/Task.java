@@ -22,7 +22,21 @@ public class Task {
 		
 		isCompleted = true;
 	}
+	public String getTaskName(){
+		return taskName;
+	}
 	
+	public long getTaskLength(){
+		return taskLength;
+	
+	}
+	public int getLevelOfDifficulty(){
+		return levelOfDifficulty;
+	}
+	
+	public String getDueDate(){
+		return dueDate;
+	}
 	@Override 
 	public String toString(){
 		String ret; 
