@@ -68,8 +68,8 @@ public class Main {
 			input = keyboard.nextLine();
 			
 		}
-	//	l.sort();
-		//System.out.println(l.printList());
+		l.sort();
+		System.out.println(l.printList());
 
 	}
 
