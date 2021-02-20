@@ -1,3 +1,5 @@
+package finalDAPLAN;
+
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.Instant;
@@ -74,3 +76,4 @@ public class Main {
 	}
 
 }
+

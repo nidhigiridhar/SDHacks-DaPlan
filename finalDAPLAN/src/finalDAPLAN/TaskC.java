@@ -1,4 +1,6 @@
-import java.util.*;
+package finalDAPLAN;
+
+import java.util.Comparator;
 
 public class TaskC implements Comparator<Task>{
 	@Override
