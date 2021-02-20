@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/* Scanner keyboard = new Scanner(System.in);
+		 Scanner keyboard = new Scanner(System.in);
 		System.out.println("input:");
 		String input = keyboard.nextLine();
 		String taskName;
@@ -40,7 +40,8 @@ public class Main {
 			input = keyboard.nextLine();
 		}
    System.out.println(l.printList());
-	*/
+
+		
 
 	}
 

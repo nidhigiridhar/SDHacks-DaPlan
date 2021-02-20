@@ -1,25 +1,33 @@
 import java.util.*;
 import java.text.SimpleDateFormat;
+import java.util.Collections;
 
 //linked list 
 public class listPlan {
 
 	private LinkedList<Task> plan;
-	
+
+
 
 	public listPlan() {
 		plan = new LinkedList<Task>();
+
+		
 	}
 
 	// add tasks
 	public boolean addTask(Task t) {
 		t.setDueInHowMany(daysDue(t));
+		
 		return plan.add(t);
 		
+
 	}
+	 
 
 	// will print all tasks added
 	public String printList() {
+		Collections.sort(plan, new TaskC());
 		return plan.toString();
 	}
 
