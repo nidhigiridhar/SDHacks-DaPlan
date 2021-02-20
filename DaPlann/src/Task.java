@@ -5,6 +5,7 @@ public class Task {
 	private int levelOfDifficulty;
 	private String dueDate;
 	private boolean isCompleted;
+	private int dueInHowMany;
 
 	
 	public Task(String myTaskName, long myTaskLength, 
@@ -36,6 +37,12 @@ public class Task {
 	
 	public String getDueDate(){
 		return dueDate;
+	}
+	public void setDueInHowMany(int i){
+		dueInHowMany = i;
+	}
+	public int getDueInHowMany(){
+		return dueInHowMany;
 	}
 	@Override 
 	public String toString(){

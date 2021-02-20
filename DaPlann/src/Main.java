@@ -1,10 +1,11 @@
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner keyboard = new Scanner(System.in);
+		/* Scanner keyboard = new Scanner(System.in);
 		System.out.println("input:");
 		String input = keyboard.nextLine();
 		String taskName;
@@ -25,7 +26,7 @@ public class Main {
 			System.out.println("Enter difficulty of task on a scale of 1 - 5");
 			levelOfDifficulty = keyboard.nextInt();
 			keyboard.nextLine();
-			System.out.println("Enter task due date");
+			System.out.println("Enter task due date in format 000000");
 			dueDate = keyboard.nextLine();	
 			t = new Task(taskName, taskLength, levelOfDifficulty, dueDate);
 			if(l.addTask(t)){
@@ -39,6 +40,8 @@ public class Main {
 			input = keyboard.nextLine();
 		}
    System.out.println(l.printList());
+	*/
+
 	}
 
 
