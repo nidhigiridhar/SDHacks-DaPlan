@@ -4,6 +4,9 @@ public class DaysBetween {
     
         int d, m, y;
  
+       public DaysBetween(){
+    	   
+       }
         public DaysBetween(int d, int m, int y)
         {
             this.d = d;
@@ -37,7 +40,7 @@ public class DaysBetween {
  
     // This function returns number 
     // of days between two given dates
-    public static int getDifference(DaysBetween dt1, DaysBetween dt2)
+    public  int getDifference(DaysBetween dt1, DaysBetween dt2)
     {
         // COUNT TOTAL NUMBER OF DAYS BEFORE FIRST DATE 'dt1'
  
