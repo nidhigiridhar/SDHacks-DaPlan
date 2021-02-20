@@ -14,3 +14,4 @@
 - ability to change completion time after task is started/ended if you under/overestimated time.
 - Have the user input a time they want to start working at. 
 - ability to dymically add tasks after your schedule has already been generated so a new schedule is made with the new tasks. 
+- Not hard code sorting the tasks based on due date. 
