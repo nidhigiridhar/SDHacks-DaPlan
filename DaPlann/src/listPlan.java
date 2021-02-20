@@ -30,7 +30,7 @@ public class listPlan {
 		Collections.sort(plan, new TaskC());
 		return plan.toString();
 	}
-
+	
 	public  static int daysDue(Task t){
 		//current date 
 	String timeStamp = new SimpleDateFormat("MMddyy").
