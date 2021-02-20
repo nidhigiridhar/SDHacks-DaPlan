@@ -6,8 +6,6 @@ public class TaskC implements Comparator<Task>{
 		return t1.getDueInHowMany() - t2.getDueInHowMany();
 	}
 	
-	
-
 
 	
 

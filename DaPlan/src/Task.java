@@ -50,7 +50,7 @@ public class Task {
 		ret = taskName+" " + String.valueOf(taskLength)+ " "
 		+ String.valueOf(levelOfDifficulty)+ " " + dueDate;
 		return ret;
-		
+
 	}
 	
 }
