@@ -6,9 +6,14 @@ import java.util.Collections;
 public class listPlan {
 
 	private LinkedList<Task> plan;
-
+	private LinkedList<Task> finalPlan;
+	private LinkedList<Task> sublistSorted;
+ 
 	public listPlan() {
 		plan = new LinkedList<Task>();
+		finalPlan = new LinkedList<Task>();
+		sublistSorted = new LinkedList<Task>();
+		
 
 	}
 	
@@ -25,8 +30,8 @@ public class listPlan {
 		
 	}
 // total time of all tasks put into program
-	public long totalTime() {
-		long ret = 0;
+	public double totalTime() {
+		double ret = 0;
 		for (Task l : plan) {
 			ret += l.getTaskLength();
 		}
@@ -70,6 +75,23 @@ public class listPlan {
 		DaysBetween dueDay = new DaysBetween(dIDay, dIMonth, dIYear);
 		DaysBetween r = new DaysBetween();
 		return r.getDifference(cDay, dueDay);
+	}
+	
+	public LinkedList<Task> listDueToday(){
+		//add tasks due today to sublistSorted 
+		//remove from plan list so that everything in plan is what is not due today
+		// prioritize the sublistSorted list in the final plan
+		for(Task t : plan){
+			if(t.getDueInHowMany() == 0 ){
+				sublistSorted.add(t);
+				plan.remove(t);
+				
+			}
+		}
+		Collections.sort(sublistSorted, new TaskB());
+		//returns everything due today in sorted order easiest to hardest
+		return sublistSorted;
+
 	}
 
 }

@@ -1,14 +1,14 @@
 
 public class Task {
 	private String taskName;
-	private long taskLength;
+	private double taskLength;
 	private int levelOfDifficulty;
 	private String dueDate;
 	private boolean isCompleted;
 	private int dueInHowMany;
 
 	
-	public Task(String myTaskName, long myTaskLength, 
+	public Task(String myTaskName, double myTaskLength, 
 			int mylevelOfDifficulty, String mydueDate) {
 		taskName = myTaskName;
 		taskLength = myTaskLength; 
@@ -27,7 +27,7 @@ public class Task {
 		return taskName;
 	}
 	
-	public long getTaskLength(){
+	public double getTaskLength(){
 		return taskLength;
 	
 	}
