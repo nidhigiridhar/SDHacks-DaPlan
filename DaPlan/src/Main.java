@@ -1,11 +1,9 @@
-import java.text.SimpleDateFormat;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.*;
 import java.text.DateFormat;
 import java.text.ParseException;
-import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Main {
 
@@ -22,7 +20,9 @@ public class Main {
 		Task t;
 		listPlan l = new listPlan();
 		input = "yes";
-
+		LinkedList <Task> transferList = new LinkedList<Task>();
+		listPlan finalList = new listPlan();
+		LinkedList <Task> hereIsPlan = new LinkedList<Task>();
 		// dating stuff
 		DateFormat df = new SimpleDateFormat("HH:mm:ss");
 		Date startTime = new Date();
@@ -69,7 +69,13 @@ public class Main {
 			
 		}
 		l.sort();
-		System.out.println(l.printList());
+		transferList = l.listDueToday();
+		for(Task r: transferList){
+			finalList.addTask(r);
+		}
+		hereIsPlan = finalList.buildFinalList();
+		
+		System.out.println(hereIsPlan.toString());
 
 	}
 

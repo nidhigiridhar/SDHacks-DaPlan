@@ -1,6 +1,7 @@
-import java.util.*;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Collections;
+import java.util.LinkedList;
 
 //linked list 
 public class listPlan {
@@ -84,14 +85,27 @@ public class listPlan {
 		for(Task t : plan){
 			if(t.getDueInHowMany() == 0 ){
 				sublistSorted.add(t);
-				plan.remove(t);
-				
+				plan.remove(t);		
 			}
 		}
 		Collections.sort(sublistSorted, new TaskB());
+		Collections.sort(plan, new TaskB());
 		//returns everything due today in sorted order easiest to hardest
 		return sublistSorted;
 
+	}
+	
+	public LinkedList<Task> buildFinalList(){
+		while(sublistSorted.size()!=0){
+			finalPlan.add(sublistSorted.removeLast());
+			finalPlan.add(sublistSorted.removeFirst());
+		}
+		while(plan.size()!=0){
+			finalPlan.add(plan.removeLast());
+			finalPlan.add(plan.removeFirst());
+		}
+		
+		return finalPlan;
 	}
 
 }
