@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a65a314-a0fd-448e-a37c-aee40d9e0c83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DaPlan/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DaPlan/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaPlann/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/DaPlan/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaPlann/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/DaPlan/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaPlann/src/DaysBetween.java" beforeDir="false" afterPath="$PROJECT_DIR$/DaPlan/src/DaysBetween.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaPlann/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DaPlan/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaPlann/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/DaPlan/src/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaPlann/src/TaskC.java" beforeDir="false" afterPath="$PROJECT_DIR$/DaPlan/src/TaskC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaPlann/src/listPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/DaPlan/src/listPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
