@@ -20,4 +20,4 @@ DaPlan is a desktop application project built for 2021 SD Hacks, February 20-21,
 
 ## Citing Resources Used:
 - https://www.geeksforgeeks.org/find-number-of-days-between-two-given-dates/
-- 
+- https://www.geeksforgeeks.org/find-the-duration-of-difference-between-two-dates-in-java/
