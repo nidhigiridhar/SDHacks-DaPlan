@@ -3,20 +3,23 @@ DaPlan is a desktop application project built for 2021 SD Hacks, February 20-21,
 
 ## Features to implement 
 
-### Task List (object)
-- Task Name
-- Completion time 
-- Level of Difficulty 
-- Due date/priority 
-- Task Completed
+## Backend
+- Have a task object that takes the following inputs from the user
+  - task name
+  - task duration in hours 
+  - due date (selected using a date picker)
+  - level of difficulty (on a scale of 1-5)
+- These tasks are stored in a linked list that goes through some sorting algorithms to generate your ideal schedule prioritized by due date while also maintaining a good balance between hard and easy tasks. 
 
 ## Stretch Features 
-- integrate with google calendar 
-- ability to change completion time after task is started/ended if you under/overestimated time.
-- Have the user input a time they want to start working at. 
-- ability to dymically add tasks after your schedule has already been generated so a new schedule is made with the new tasks. 
-- Not hard code sorting the tasks based on due date. 
-- Be able to input tasks for a week instead of a single day 
+- Ability to check off a task once you have completed it 
+- Ability to go back and edit the duration of a task is you over/under-estimated it
+- Output the schedule as a calendar with tasks planned out according to hours of the day
+- Have the user input a time they want to start/stop working at 
+- Ability to automatically add breaks in a smart way 
+- Possibly come up with a more efficient mechanism of sorting the tasks 
+- Integrate the schedule with google calendar 
+ 
 
 ## Citing Resources Used:
 - https://www.geeksforgeeks.org/find-number-of-days-between-two-given-dates/
