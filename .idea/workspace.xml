@@ -20,18 +20,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a65a314-a0fd-448e-a37c-aee40d9e0c83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SDHacks-ThePlan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SDHacks-ThePlan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/src/DaysBetween.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/src/TaskB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/src/TaskC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlan/src/listPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlann/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaPlann/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/AddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Caveat-Regular.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/DaysBetween.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/TaskB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/TaskC.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Toast.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/addTask.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/listPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/finalDAPLAN/DaysBetween.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/finalDAPLAN/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/finalDAPLAN/TaskB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/finalDAPLAN/TaskC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/finalDAPLAN/listPlan.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/toastStyles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +63,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ojTwE7uYpPbn3s0gqNDxTnvFIN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,10 +71,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DaPlann/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SDHacks-ThePlan" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -81,23 +117,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613799848283">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="2300" y="77" key="#Project_Structure" timestamp="1613881329970">
+      <screen x="1920" y="-75" width="1920" height="1050" />
+    </state>
+    <state x="2300" y="77" key="#Project_Structure/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613881329970" />
+    <state x="2521" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613883134918">
+      <screen x="1920" y="-75" width="1920" height="1050" />
     </state>
     <state x="217" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613799848283" />
-    <state x="492" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1613799846107">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="2521" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613883134918" />
+    <state x="2535" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1613882177522">
+      <screen x="1920" y="-75" width="1920" height="1050" />
     </state>
     <state x="492" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613799846107" />
-    <state x="2468" y="84" key="FileChooserDialogImpl" timestamp="1613851134178">
+    <state x="2535" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613882177522" />
+    <state x="2468" y="84" key="FileChooserDialogImpl" timestamp="1613883071954">
       <screen x="1920" y="-75" width="1920" height="1050" />
     </state>
-    <state x="438" y="126" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613850707145" />
-    <state x="2468" y="84" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613851134178" />
-    <state x="2267" y="10" key="SettingsEditor" timestamp="1613851291366">
+    <state x="438" y="126" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613881402161" />
+    <state x="2468" y="84" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613883071954" />
+    <state x="2626" y="29" key="SettingsEditor" timestamp="1613883511012">
       <screen x="1920" y="-75" width="1920" height="1050" />
     </state>
-    <state x="243" y="0" key="SettingsEditor/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613799684597" />
-    <state x="2267" y="10" key="SettingsEditor/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613851291366" />
+    <state x="2193" y="94" key="SettingsEditor/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613881403695" />
+    <state x="2626" y="29" key="SettingsEditor/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613883511012" />
   </component>
 </project>
