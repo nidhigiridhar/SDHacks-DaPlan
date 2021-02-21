@@ -1,9 +1,11 @@
 # SDHacks - DaPlan
 DaPlan is a desktop application project built for 2021 SD Hacks, February 20-21, 2021. Built with a Java backend and JavaFX Scene Builder frontend. Da Plan is a smart scheduling app that sorts all of your tasks for the day, taking into account due dates and levels of difficulty so that you can plan your day's work efficiently.
 
-## Features to implement 
+## Watch a demo of our app here!
+- https://youtu.be/iijLeXgRLOM
+ 
 
-## Backend
+## How the app works (Techinally)
 - Have a task object that takes the following inputs from the user
   - task name
   - task duration in hours 
