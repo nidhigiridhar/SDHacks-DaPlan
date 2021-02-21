@@ -25,7 +25,7 @@
                   <Region HBox.hgrow="ALWAYS" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                      <image>
-                        <Image url="@../../SDHacks-ThePlan/finalDAPLAN/src/assets/da_plan_logo.png" />
+                        <Image url="@assets/da_plan_logo.png" />
                      </image>
                   </ImageView>
                   <Region HBox.hgrow="ALWAYS" />
