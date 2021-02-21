@@ -46,6 +46,10 @@ public class UnsortedController {
 
     private ObservableList observableList;
 
+    /**
+     * Method called when the layout is first created.
+     * Sets up the color coding by difficulty, TableView rows and columns, and ObservableList.
+     */
     @FXML
     void initialize() {
         setSliderColors();
@@ -62,15 +66,15 @@ public class UnsortedController {
         tableTasks.setStyle("-fx-font-size: 18px");
         colorCodeRows();
 
-        System.out.println(tableTasks.getItems());
     }
 
+    /**
+     * Sets up the TableView column names, widths, and values to represent Task attributes.
+     * Inserts a placeholder if there are no rows in the table.
+     */
     private void setUpColumns() {
         tableTasks.getColumns().clear();
         tableTasks.setPlaceholder(new Label("No tasks yet :)"));
-
-
-
 
         TableColumn nameCol = new TableColumn("Task Name");
         nameCol.setCellValueFactory(new PropertyValueFactory<Task, String>("taskName"));
@@ -87,6 +91,9 @@ public class UnsortedController {
         tableTasks.getColumns().addAll( nameCol, lengthCol, dueDateCol);
     }
 
+    /**
+     * Configures the colors of rows. The colors correspond to the difficulty of the tasks in each row.
+     */
     private void colorCodeRows() {
         tableTasks.setRowFactory(tv -> new TableRow<Task>() {
             @Override
@@ -121,6 +128,10 @@ public class UnsortedController {
         });
     }
 
+    /**
+     * Configures the slider so that it is color-coded by difficulty.
+     * The slider should change color whenever it is moved to a different value.
+     */
     private void setSliderColors() {
         sliderDifficulty.setStyle("-fx-control-inner-background: #80E58A;");
         sliderDifficulty.valueProperty().addListener((observable, oldValue, newValue) -> {
@@ -147,6 +158,14 @@ public class UnsortedController {
         });
     }
 
+    /**
+     * Event listener for when the user is finished creating a new task.
+     * Handles erroneous inputs such as empty fields, due dates before the current date,
+     * and hours exceeding the number of available time in a day.
+     * If all inputs are valid, adds a task to the backend list of tasks and clears the field.
+     * The newly created task is immediately displayed onto the task TableView.
+     * @param event         standard event listener parameter
+     */
     @FXML
     void createTask(ActionEvent event)
     {
@@ -173,15 +192,10 @@ public class UnsortedController {
                 // raises exception if user didn't input a number for task length
                 double lengthDouble = Double.valueOf(tfLength.getText());
 
-
-
-
-
+                // creates the new Task from the input attributes and adds it to the backend
                 Task t = new Task(tfName.getText(), lengthDouble, (int) sliderDifficulty.getValue(), dateToString(dpDueDate.getValue()));
                 Main.schedule.addTask(t);
                 observableList.add(t);
-
-                Main.schedule.printList();
 
                 SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
                 String dateStart = new SimpleDateFormat("HH:mm:ss").format(new Date());
@@ -201,6 +215,7 @@ public class UnsortedController {
                 long diffMinutes = diff / (60 * 1000) % 60;
                 long differenceInHours = diff / (60 * 60 * 1000);
 
+                // number of hours cannot exceed time between now and the end of the day
                 if (Main.schedule.totalTime() > differenceInHours)
                 {
                     Main.schedule.removeElement(t);
@@ -208,7 +223,10 @@ public class UnsortedController {
                     Toast.show("Task length exceeds amount of time", errorToast);
                 }
 
+                // renders the task list onto the UI TableView
                 tableTasks.setItems(observableList);
+
+                // resets input fields
                 clearFields();
             }
         } catch (NumberFormatException e) {
@@ -216,8 +234,11 @@ public class UnsortedController {
         }
     }
 
-
-
+    /**
+     * Returns a String representing a LocalDate object, in the form MMDDYYYY
+     * @param date      a LocalDate object taken from DatePicker
+     * @return          the formatted String version of the LocalDate object
+     */
     private String dateToString(LocalDate date) {
         String dateStr = String.valueOf(date);
         String year = dateStr.substring(2,4);
@@ -226,6 +247,9 @@ public class UnsortedController {
         return month + day + year;
     }
 
+    /**
+     * Resets the input fields of the New Task form, after the user has submitted a new task.
+     */
     private void clearFields() {
         tfName.setText("");
         tfLength.setText("");
@@ -233,6 +257,13 @@ public class UnsortedController {
         sliderDifficulty.setValue(1);
     }
 
+    /**
+     * Sorts the list of tasks stored in the backend with a complex algorithm.
+     * This method should be executed after the user has finished adding tasks.
+     * Navigates to the Sorted Schedule Page of the app, where the user will then see this sorted list.
+     * @param event         standard event listener parameter
+     * @throws IOException  thrown by FXMLLoader.load()
+     */
     @FXML
     void genSchedule(ActionEvent event) throws IOException {
 
@@ -240,19 +271,18 @@ public class UnsortedController {
         Main.schedule.listDueToday();
         Main.schedule.buildFinalList();
 
-        //System.out.println(Main.schedule.getPlan());
-        //System.out.println(Main.schedule.getFinalPlan());
-
         AnchorPane panel = FXMLLoader.load(this.getClass().getResource("sortedSchedule.fxml"));
         mainPanel.getChildren().setAll(panel);
-
-
     }
 
+    /**
+     * Navigates to the About Page of the app.
+     * @param actionEvent         standard event listener parameter
+     * @throws IOException        thrown by FXMLLoader.load()
+     */
     @FXML
     public void toAbout(ActionEvent actionEvent) throws IOException
     {
-        //System.out.println("Button clicked");
         AnchorPane panel = FXMLLoader.load(this.getClass().getResource("aboutPage.fxml"));
         mainPanel.getChildren().setAll(panel);
     }

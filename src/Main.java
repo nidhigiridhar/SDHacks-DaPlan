@@ -13,6 +13,13 @@ public class Main extends Application {
 
     public static listPlan schedule;
 
+    /**
+     * Called when the desktop application first runs
+     * Initializes the backend list.
+     * Sets up the stage and scene for the Welcome/Landing page.
+     * @param primaryStage      the screen that the application first displays
+     * @throws Exception        thrown by FXMLLoader.load()
+     */
     @Override
     public void start(Stage primaryStage) throws Exception{
         schedule = new listPlan();
@@ -22,11 +29,13 @@ public class Main extends Application {
         Scene scene = new Scene(root, 900, 550);
         primaryStage.setScene(scene);
 
-
         primaryStage.show();
     }
 
-
+    /**
+     * Runs the desktop application.
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }

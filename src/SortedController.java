@@ -31,6 +31,11 @@ public class SortedController
 
     private ObservableList observableList;
 
+    /**
+     * Method called when the layout is first created.
+     * Sets up the color coding by difficulty, TableView rows and columns, and ObservableList.
+     * Adds tasks from the backend list into the list that will be displayed in the table.
+     */
     @FXML
     void initialize() {
         setUpColumns();
@@ -45,6 +50,10 @@ public class SortedController
         colorCodeRows();
     }
 
+    /**
+     * Sets up the TableView column names, widths, and values to represent Task attributes.
+     * Inserts a placeholder if there are no rows in the table.
+     */
     private void setUpColumns() {
         tableTasks.getColumns().clear();
         tableTasks.setPlaceholder(new Label("No tasks yet :)"));
@@ -94,6 +103,9 @@ public class SortedController
         tableTasks.getColumns().addAll(doneCol, nameCol, lengthCol, dueDateCol);
     }
 
+    /**
+     * Configures the colors of rows. The colors correspond to the difficulty of the tasks in each row.
+     */
     private void colorCodeRows() {
         tableTasks.setRowFactory(tv -> new TableRow<Task>() {
             @Override
@@ -128,6 +140,10 @@ public class SortedController
         });
     }
 
+    /**
+     * Checks off the task that was clicked, removing it from the list of tasks.
+     * @param task      the task that whose row checkbox was clicked
+     */
     private void checkOffTask(Task task) {
         System.out.println("checked");
         for (int i = 0; i < observableList.size(); i++) {
@@ -138,12 +154,22 @@ public class SortedController
         }
     }
 
+    /**
+     * Navigates back to the Unsorted Schedule page of the app.
+     * @param actionEvent         Standard event listener parameter
+     * @throws IOException        thrown by FXMLLoader.load()
+     */
     public void back(ActionEvent actionEvent) throws IOException
     {
         AnchorPane panel = FXMLLoader.load(this.getClass().getResource("unsortedSchedule.fxml"));
         mainPanel.getChildren().setAll(panel);
     }
 
+    /**
+     * Navigates to the About Page of the app.
+     * @param actionEvent         Standard event listener parameter
+     * @throws IOException        thrown by FXMLLoader.load()
+     */
     @FXML
     public void goToAbout(ActionEvent actionEvent) throws IOException
     {
