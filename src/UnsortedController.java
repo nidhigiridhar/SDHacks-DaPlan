@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 import finalDAPLAN.Task;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,7 +16,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 
 
-public class Controller {
+public class UnsortedController {
 
     @FXML
     private ResourceBundle resources;
@@ -52,6 +50,9 @@ public class Controller {
         setUpColumns();
 
         observableList = FXCollections.observableArrayList();
+        for (Task t: Main.schedule.getPlan()) {
+            observableList.add(t);
+        }
 
         tableTasks.setItems(observableList);
         tableTasks.setStyle("-fx-font-size: 18px");
@@ -217,12 +218,17 @@ public class Controller {
     void genSchedule(ActionEvent event) throws IOException {
         // TODO: call sort tasks function in backend
 
-        // TODO: change destination fxml file to sorted schedule screen
-        /*
-        AnchorPane panel = FXMLLoader.load(this.getClass().getResource("addTask.fxml"));
+        AnchorPane panel = FXMLLoader.load(this.getClass().getResource("sortedSchedule.fxml"));
         mainPanel.getChildren().setAll(panel);
-        */
+
 
     }
 
+    @FXML
+    public void toAbout(ActionEvent actionEvent) throws IOException
+    {
+        System.out.println("Button clicked");
+        AnchorPane panel = FXMLLoader.load(this.getClass().getResource("aboutPage.fxml"));
+        mainPanel.getChildren().setAll(panel);
+    }
 }

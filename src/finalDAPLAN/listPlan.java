@@ -49,7 +49,9 @@ public class listPlan {
 		}
 	}
 
-
+	public LinkedList<Task> getPlan() {
+		return plan;
+	}
 
 	public void sort() {
 		Collections.sort(plan, new TaskC());

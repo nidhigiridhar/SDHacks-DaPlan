@@ -13,10 +13,15 @@ public class LandingController
     @FXML
     void runProgram(ActionEvent event) throws IOException
     {
-        AnchorPane panel = FXMLLoader.load(this.getClass().getResource("sample.fxml"));
+        AnchorPane panel = FXMLLoader.load(this.getClass().getResource("unsortedSchedule.fxml"));
         welcomePage.getChildren().setAll(panel);
     }
 
-
+    @FXML
+    public void goToAbout(ActionEvent actionEvent) throws IOException
+    {
+        AnchorPane panel = FXMLLoader.load(this.getClass().getResource("aboutPage.fxml"));
+        welcomePage.getChildren().setAll(panel);
+    }
 }
 

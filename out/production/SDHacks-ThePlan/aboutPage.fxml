@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="aboutPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: floralwhite;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="#9a8781" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: true;" text="What's Da Plan?" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Italic" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="250.0" prefWidth="300.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #9a8781; -fx-background-color: white;" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: floralwhite; -fx-border-radius: 5em; -fx-background-radius: 5em; -fx-border-color: #9a8781;" text="&lt;" textFill="#9a8781" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <Glow />
+         </effect>
+         <tooltip>
+            <Tooltip text="Take me back" />
+         </tooltip>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
