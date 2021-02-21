@@ -1,14 +1,27 @@
 package finalDAPLAN;
-
+/** 
+* This class finds the number of days between two given dates that are formatted as mmddyy
+*/
 
 public class DaysBetween {
-	 // A date has day 'd', month 'm' and year 'y'
-    
+	
+	// A date has day 'd', month 'm' and year 'y'
         int d, m, y;
  
+	/** 
+	* DaysBetween Default Constructor 
+	*/
        public DaysBetween(){
     	   
        }
+	
+	/** 
+	* DaysBetween Constructor 
+	* 
+	* @param d day
+	* @param m month
+	* @param y year
+	*/
         public DaysBetween(int d, int m, int y)
         {
             this.d = d;
@@ -22,8 +35,12 @@ public class DaysBetween {
     static int monthDays[] = {31, 28, 31, 30, 31, 30,
                             31, 31, 30, 31, 30, 31};
  
-    // This function counts number of 
-    // leap years before the given date
+
+	/** 
+	* countLeapYear: this function counts the number of leap years before the given date
+	* 
+	* @param d a DaysBetween object that represents the current date.
+	*/
     static int countLeapYears(DaysBetween d) 
     {
         int years = d.y;
@@ -42,6 +59,11 @@ public class DaysBetween {
  
     // This function returns number 
     // of days between two given dates
+	/** getDifference: this function returns the number of days between two given dates
+	* 
+	* @param dt1 DaysBetween object that represents first date.
+	* @param dt2 DaysBetween object that represents second date.
+	*/
     public  int getDifference(DaysBetween dt1, DaysBetween dt2)
     {
         // COUNT TOTAL NUMBER OF DAYS BEFORE FIRST DATE 'dt1'
@@ -70,15 +92,4 @@ public class DaysBetween {
         // return difference between two counts
         return (n2 - n1);
     }
- /*
-    // Driver code
-    public static void main(String[] args) 
-    {
-        DaysBetween dt1 = new DaysBetween(1, 2, 2000);
-        DaysBetween dt2 = new DaysBetween(1, 2, 2001);
-        System.out.println("Difference between two dates is " + 
-                            getDifference(dt1, dt2));
-    }
-*/
-    
 }
