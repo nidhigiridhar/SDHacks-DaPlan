@@ -4,6 +4,8 @@ DaPlan is a desktop application project built for 2021 SD Hacks, February 20-21,
 ## Watch a demo of our app here!
 - https://youtu.be/iijLeXgRLOM
  
+## Link to our project DevPost
+- https://devpost.com/software/da-plan
 
 ## How the app works (Techinally)
 - Have a task object that takes the following inputs from the user
