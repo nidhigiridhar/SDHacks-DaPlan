@@ -1,3 +1,6 @@
 .popup {
-    -fx-text-fill: red;
+    -fx-text-fill: white;
+    -fx-background-color: #E74C3C;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
 }

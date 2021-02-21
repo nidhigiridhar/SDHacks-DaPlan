@@ -1,24 +1,19 @@
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
+import finalDAPLAN.Task;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
-import javafx.util.Callback;
 
 public class Controller {
 
@@ -49,6 +44,8 @@ public class Controller {
 
     @FXML
     void initialize() {
+        setSliderColors();
+
         setUpColumns();
 
         observableList = FXCollections.observableArrayList(
@@ -57,6 +54,7 @@ public class Controller {
         );
 
         tableTasks.setItems(observableList);
+        tableTasks.setStyle("-fx-font-size: 18px");
         colorCodeRows();
 
         System.out.println(tableTasks.getItems());
@@ -85,7 +83,6 @@ public class Controller {
             @Override
             protected void updateItem(Task item, boolean empty) {
                 super.updateItem(item, empty);
-                System.out.println(item);
                 if (item == null || item.getTaskName() == null) {
                     setStyle("");
                     return;
@@ -94,23 +91,49 @@ public class Controller {
                 switch (item.getLevelOfDifficulty())
                 {
                     case 1:
-                        setStyle("-fx-background-color: green;");
+                        setStyle("-fx-background-color: #80E58A;");
                         break;
                     case 2:
-                        setStyle("-fx-background-color: blue;");
+                        setStyle("-fx-background-color: #C7E941;");
                         break;
                     case 3:
-                        setStyle("-fx-background-color: yellow;");
+                        setStyle("-fx-background-color: #F4FF74;");
                         break;
                     case 4:
-                        setStyle("-fx-background-color: orange;");
+                        setStyle("-fx-background-color: #FF9E44;");
                         break;
                     case 5:
-                        setStyle("-fx-background-color: red;");
+                        setStyle("-fx-background-color: #F07070;");
                         break;
                     default:
                         setStyle("");
                 }
+            }
+        });
+    }
+
+    private void setSliderColors() {
+        sliderDifficulty.setStyle("-fx-control-inner-background: #80E58A;");
+        sliderDifficulty.valueProperty().addListener((observable, oldValue, newValue) -> {
+            switch ((Integer) newValue.intValue())
+            {
+                case 1:
+                    sliderDifficulty.setStyle("-fx-control-inner-background: #80E58A;");
+                    break;
+                case 2:
+                    sliderDifficulty.setStyle("-fx-control-inner-background: #C7E941;");
+                    break;
+                case 3:
+                    sliderDifficulty.setStyle("-fx-control-inner-background: #F4FF74;");
+                    break;
+                case 4:
+                    sliderDifficulty.setStyle("-fx-control-inner-background: #FF9E44;");
+                    break;
+                case 5:
+                    sliderDifficulty.setStyle("-fx-control-inner-background: #F07070;");
+                    break;
+                default:
+                    sliderDifficulty.setStyle("-fx-control-inner-background: #80E58A;");
             }
         });
     }
@@ -155,7 +178,6 @@ public class Controller {
                 clearFields();
             }
         } catch (NumberFormatException e) {
-            System.out.println(e);
             Toast.show("Task length must be a number.", errorToast);
         }
     }
@@ -174,6 +196,7 @@ public class Controller {
         tfName.setText("");
         tfLength.setText("");
         dpDueDate.setValue(null);
+        sliderDifficulty.setValue(1);
     }
 
     @FXML

@@ -21,6 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="7a65a314-a0fd-448e-a37c-aee40d9e0c83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/AddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/DaysBetween.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/TaskB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/TaskC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/Toast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/addTask.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/listPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalDAPLAN/src/toastStyles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
