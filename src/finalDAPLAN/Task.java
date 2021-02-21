@@ -1,5 +1,6 @@
 package finalDAPLAN;
 
+
 public class Task {
 	private String taskName;
 	private double taskLength;
@@ -23,7 +24,6 @@ public class Task {
 	public Boolean getIsCompleted() {
 		return isCompleted;
 	}
-
 	//  will complete task
 	public void setIsCompleted(){
 
@@ -37,11 +37,6 @@ public class Task {
 		return taskLength;
 
 	}
-
-	public String getLengthAsString() {
-		return String.valueOf(taskLength) + " hours";
-	}
-
 	public int getLevelOfDifficulty(){
 		return levelOfDifficulty;
 	}
@@ -49,16 +44,22 @@ public class Task {
 	public String getDueDate(){
 		return dueDate;
 	}
-	public String getDueDateFormatted() {
-		return dueDate.substring(0,2) + "/" + dueDate.substring(2,4) + "/" + dueDate.substring(4);
-	}
-
 	public void setDueInHowMany(int i){
 		dueInHowMany = i;
 	}
 	public int getDueInHowMany(){
 		return dueInHowMany;
 	}
+
+	public String getLengthAsString() {
+		return String.valueOf(taskLength) + " hours";
+	}
+
+
+	public String getDueDateFormatted() {
+		return dueDate.substring(0,2) + "/" + dueDate.substring(2,4) + "/" + dueDate.substring(4);
+	}
+
 	@Override
 	public String toString(){
 		String ret;

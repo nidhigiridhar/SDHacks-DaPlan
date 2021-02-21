@@ -1,6 +1,9 @@
 import java.io.IOException;
 import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 import finalDAPLAN.Task;
@@ -50,9 +53,10 @@ public class UnsortedController {
         setUpColumns();
 
         observableList = FXCollections.observableArrayList();
-        for (Task t: Main.schedule.getPlan()) {
+        for (Task t: Main.schedule.getFinalPlan()) {
             observableList.add(t);
         }
+
 
         tableTasks.setItems(observableList);
         tableTasks.setStyle("-fx-font-size: 18px");
@@ -63,23 +67,9 @@ public class UnsortedController {
 
     private void setUpColumns() {
         tableTasks.getColumns().clear();
+        tableTasks.setPlaceholder(new Label("No tasks yet :)"));
 
 
-        //TableColumn doneCol = new TableColumn( "Done" );
-        //doneCol.setCellValueFactory(new PropertyValueFactory<Task, Checkbox>("checked"));
-        /*
-        doneCol.setCellValueFactory(
-                new Callback<TableColumn.CellDataFeatures<Task,Boolean>,ObservableValue<Boolean>>(){
-                    @Override public
-                    ObservableValue<Boolean> call( TableColumn.CellDataFeatures<Task,Boolean> p ){
-                        return p.getValue().getIsCompleted();
-                    }});
-        doneCol.setCellFactory(
-                new Callback<TableColumn<Task,Boolean>,TableCell<Task,Boolean>>(){
-                    @Override public
-                    TableCell<Task,Boolean> call( TableColumn<Task,Boolean> p ){
-                        return new CheckBoxTableCell<>(); }});
-         */
 
 
         TableColumn nameCol = new TableColumn("Task Name");
@@ -183,13 +173,42 @@ public class UnsortedController {
                 // raises exception if user didn't input a number for task length
                 double lengthDouble = Double.valueOf(tfLength.getText());
 
+
+
+
+
                 Task t = new Task(tfName.getText(), lengthDouble, (int) sliderDifficulty.getValue(), dateToString(dpDueDate.getValue()));
                 Main.schedule.addTask(t);
                 observableList.add(t);
-                tableTasks.setItems(observableList);
+
                 Main.schedule.printList();
 
+                SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+                String dateStart = new SimpleDateFormat("HH:mm:ss").format(new Date());
+                String dateStop = "23:59:59";
+                Date d1 = null;
+                Date d2 = null;
+                try {
+                    d1 = format.parse(dateStart);
+                    d2 = format.parse(dateStop);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
 
+                // Get msec from each, and subtract.
+                long diff = d2.getTime() - d1.getTime();
+                long diffSeconds = diff / 1000 % 60;
+                long diffMinutes = diff / (60 * 1000) % 60;
+                long differenceInHours = diff / (60 * 60 * 1000);
+
+                if (Main.schedule.totalTime() > differenceInHours)
+                {
+                    Main.schedule.removeElement(t);
+                    observableList.remove(observableList.size() - 1);
+                    Toast.show("Task length exceeds amount of time", errorToast);
+                }
+
+                tableTasks.setItems(observableList);
                 clearFields();
             }
         } catch (NumberFormatException e) {
@@ -216,7 +235,13 @@ public class UnsortedController {
 
     @FXML
     void genSchedule(ActionEvent event) throws IOException {
-        // TODO: call sort tasks function in backend
+
+        Main.schedule.sort();
+        Main.schedule.listDueToday();
+        Main.schedule.buildFinalList();
+
+        //System.out.println(Main.schedule.getPlan());
+        //System.out.println(Main.schedule.getFinalPlan());
 
         AnchorPane panel = FXMLLoader.load(this.getClass().getResource("sortedSchedule.fxml"));
         mainPanel.getChildren().setAll(panel);
@@ -227,7 +252,7 @@ public class UnsortedController {
     @FXML
     public void toAbout(ActionEvent actionEvent) throws IOException
     {
-        System.out.println("Button clicked");
+        //System.out.println("Button clicked");
         AnchorPane panel = FXMLLoader.load(this.getClass().getResource("aboutPage.fxml"));
         mainPanel.getChildren().setAll(panel);
     }

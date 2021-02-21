@@ -20,7 +20,6 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("WelcomePage.fxml"));
         primaryStage.setTitle("Da Plan");
         Scene scene = new Scene(root, 900, 550);
-        //scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
 
 

@@ -20,24 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AboutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortedController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aboutPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortedSchedule.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/AddController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Controller$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/LandingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/LandingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/WelcomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/WelcomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/addTask.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/ScheduleController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/ScheduleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/SortedController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/SortedController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/SortedController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/SortedController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/UnsortedController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/UnsortedController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/UnsortedController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/UnsortedController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/aboutPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/aboutPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/listPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/listPlan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnsortedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LandingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LandingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WelcomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WelcomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScheduleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnsortedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnsortedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aboutPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/aboutPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalDAPLAN/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finalDAPLAN/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/finalDAPLAN/listPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finalDAPLAN/listPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/unsortedSchedule.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,6 +242,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
@@ -255,10 +254,11 @@
     </state>
     <state x="381" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613883126435" />
     <state x="2250" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613865203815" />
-    <state x="564" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1613802895206">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="2625" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1613902048404">
+      <screen x="1920" y="-75" width="1920" height="1050" />
     </state>
     <state x="564" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613802895206" />
+    <state x="2625" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613902048404" />
     <state x="657" y="192" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1613882325366">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -272,26 +272,26 @@
     </state>
     <state x="543" y="184" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613881550144" />
     <state x="2599" y="157" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613865908568" />
-    <state width="1340" height="182" key="GridCell.Tab.0.bottom" timestamp="1613898922851">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="182" key="GridCell.Tab.0.bottom" timestamp="1613910366220">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613895894168" />
-    <state width="1340" height="182" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613898922851" />
-    <state width="1340" height="182" key="GridCell.Tab.0.center" timestamp="1613898922851">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="182" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613910366220" />
+    <state width="1877" height="182" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613903046357" />
+    <state width="1342" height="182" key="GridCell.Tab.0.center" timestamp="1613910366220">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613895894167" />
-    <state width="1340" height="182" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613898922851" />
-    <state width="1340" height="182" key="GridCell.Tab.0.left" timestamp="1613898922850">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="182" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613910366220" />
+    <state width="1877" height="182" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613903046357" />
+    <state width="1342" height="182" key="GridCell.Tab.0.left" timestamp="1613910366220">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613895894167" />
-    <state width="1340" height="182" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613898922850" />
-    <state width="1340" height="182" key="GridCell.Tab.0.right" timestamp="1613898922851">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="182" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613910366220" />
+    <state width="1877" height="182" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613903046356" />
+    <state width="1342" height="182" key="GridCell.Tab.0.right" timestamp="1613910366220">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613895894168" />
-    <state width="1340" height="182" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613898922851" />
+    <state width="1342" height="182" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613910366220" />
+    <state width="1877" height="182" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613903046357" />
     <state x="282" y="0" key="SettingsEditor" timestamp="1613882357802">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
