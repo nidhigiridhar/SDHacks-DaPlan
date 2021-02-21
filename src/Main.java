@@ -1,4 +1,5 @@
 import finalDAPLAN.Task;
+import finalDAPLAN.listPlan;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -10,12 +11,15 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    public static listPlan schedule;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        schedule = new listPlan();
+
+        Parent root = FXMLLoader.load(getClass().getResource("WelcomePage.fxml"));
         primaryStage.setTitle("Da Plan");
-        Scene scene = new Scene(root, 1200, 800);
+        Scene scene = new Scene(root, 900, 550);
         //scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
 

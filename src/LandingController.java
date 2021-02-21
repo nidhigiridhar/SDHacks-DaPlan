@@ -1,24 +1,22 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class AddController
+public class LandingController
 {
     @FXML
-    private AnchorPane addPanel;
+    private AnchorPane welcomePage;
 
     @FXML
-    private Button btnFinish;
-
-    @FXML
-    void createTask(ActionEvent event) throws IOException
+    void runProgram(ActionEvent event) throws IOException
     {
         AnchorPane panel = FXMLLoader.load(this.getClass().getResource("sample.fxml"));
-        addPanel.getChildren().setAll(panel);
+        welcomePage.getChildren().setAll(panel);
     }
 
+
 }
+

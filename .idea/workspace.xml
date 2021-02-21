@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SDHacks-ThePlan.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LandingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WelcomePage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDHacks-ThePlan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SDHacks-ThePlan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/SDHacks-ThePlan/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/SDHacks-ThePlan/Caveat-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/SDHacks-ThePlan/addTask.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/SDHacks-ThePlan/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/SDHacks-ThePlan/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/SDHacks-ThePlan/toastStyles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/listPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SDHacks-ThePlan/finalDAPLAN/listPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalDAPLAN/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finalDAPLAN/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalDAPLAN/listPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finalDAPLAN/listPlan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,11 +125,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15109\IdeaProjects\SDHacks-ThePlan\src" />
       <recent name="C:\Users\15109\IdeaProjects\DaPlanTest\src" />
       <recent name="C:\Users\15109\IdeaProjects\DaPlanTest\src\finalDAPLAN" />
       <recent name="C:\Users\15109\IdeaProjects\SDHacks-ThePlan\finalDAPLAN\src\finalDAPLAN" />
       <recent name="C:\Users\15109\IdeaProjects\SDHacks-ThePlan\finalDAPLAN\src\finalDAPLAN\finalDAPLAN" />
-      <recent name="C:\Users\15109\IdeaProjects\SDHacks-ThePlan\finalDAPLAN\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,6 +229,17 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
@@ -242,26 +263,26 @@
     </state>
     <state x="543" y="184" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613881550144" />
     <state x="2599" y="157" key="FileChooserDialogImpl/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613865908568" />
-    <state width="1340" height="194" key="GridCell.Tab.0.bottom" timestamp="1613884172539">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="183" key="GridCell.Tab.0.bottom" timestamp="1613891486103">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1342" height="164" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613813261252" />
-    <state width="1340" height="194" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613884172539" />
-    <state width="1340" height="194" key="GridCell.Tab.0.center" timestamp="1613884172538">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="183" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613891486103" />
+    <state width="1340" height="194" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613889420499" />
+    <state width="1342" height="183" key="GridCell.Tab.0.center" timestamp="1613891486103">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1342" height="164" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613813261252" />
-    <state width="1340" height="194" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613884172538" />
-    <state width="1340" height="194" key="GridCell.Tab.0.left" timestamp="1613884172538">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="183" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613891486103" />
+    <state width="1340" height="194" key="GridCell.Tab.0.center/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613889420499" />
+    <state width="1342" height="183" key="GridCell.Tab.0.left" timestamp="1613891486103">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1342" height="164" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613813261252" />
-    <state width="1340" height="194" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613884172538" />
-    <state width="1340" height="194" key="GridCell.Tab.0.right" timestamp="1613884172538">
-      <screen x="1920" y="-75" width="1920" height="1050" />
+    <state width="1342" height="183" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613891486103" />
+    <state width="1340" height="194" key="GridCell.Tab.0.left/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613889420499" />
+    <state width="1342" height="183" key="GridCell.Tab.0.right" timestamp="1613891486103">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1342" height="164" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613813261252" />
-    <state width="1340" height="194" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613884172538" />
+    <state width="1342" height="183" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@0.0.1536.834" timestamp="1613891486103" />
+    <state width="1340" height="194" key="GridCell.Tab.0.right/0.0.1536.834/1920.-75.1920.1050@1920.-75.1920.1050" timestamp="1613889420499" />
     <state x="282" y="0" key="SettingsEditor" timestamp="1613882357802">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

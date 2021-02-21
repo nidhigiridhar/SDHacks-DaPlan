@@ -12,8 +12,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+
 
 public class Controller {
 
@@ -48,10 +51,7 @@ public class Controller {
 
         setUpColumns();
 
-        observableList = FXCollections.observableArrayList(
-                new Task("Study",  3, 5, "022321"),
-                new Task("Laundry", 4, 1, "022321")
-        );
+        observableList = FXCollections.observableArrayList();
 
         tableTasks.setItems(observableList);
         tableTasks.setStyle("-fx-font-size: 18px");
@@ -62,6 +62,24 @@ public class Controller {
 
     private void setUpColumns() {
         tableTasks.getColumns().clear();
+
+
+        //TableColumn doneCol = new TableColumn( "Done" );
+        //doneCol.setCellValueFactory(new PropertyValueFactory<Task, Checkbox>("checked"));
+        /*
+        doneCol.setCellValueFactory(
+                new Callback<TableColumn.CellDataFeatures<Task,Boolean>,ObservableValue<Boolean>>(){
+                    @Override public
+                    ObservableValue<Boolean> call( TableColumn.CellDataFeatures<Task,Boolean> p ){
+                        return p.getValue().getIsCompleted();
+                    }});
+        doneCol.setCellFactory(
+                new Callback<TableColumn<Task,Boolean>,TableCell<Task,Boolean>>(){
+                    @Override public
+                    TableCell<Task,Boolean> call( TableColumn<Task,Boolean> p ){
+                        return new CheckBoxTableCell<>(); }});
+         */
+
 
         TableColumn nameCol = new TableColumn("Task Name");
         nameCol.setCellValueFactory(new PropertyValueFactory<Task, String>("taskName"));
@@ -75,7 +93,7 @@ public class Controller {
         dueDateCol.setCellValueFactory(new PropertyValueFactory<Task, String>("dueDateFormatted"));
         dueDateCol.setMinWidth(150);
 
-        tableTasks.getColumns().addAll(nameCol, lengthCol, dueDateCol);
+        tableTasks.getColumns().addAll( nameCol, lengthCol, dueDateCol);
     }
 
     private void colorCodeRows() {
@@ -164,16 +182,12 @@ public class Controller {
                 // raises exception if user didn't input a number for task length
                 double lengthDouble = Double.valueOf(tfLength.getText());
 
-                System.out.println(tfName.getText());
-                System.out.println(lengthDouble);
-                System.out.println(dateToString(dpDueDate.getValue()));
-                System.out.println(sliderDifficulty.getValue());
-
-                // TODO: add task to the backend task list
-                observableList.add(new Task(tfName.getText(), lengthDouble, (int) sliderDifficulty.getValue(), dateToString(dpDueDate.getValue())));
+                Task t = new Task(tfName.getText(), lengthDouble, (int) sliderDifficulty.getValue(), dateToString(dpDueDate.getValue()));
+                Main.schedule.addTask(t);
+                observableList.add(t);
                 tableTasks.setItems(observableList);
+                Main.schedule.printList();
 
-                // TODO: notify ListView that tasks list has changed
 
                 clearFields();
             }
@@ -204,8 +218,11 @@ public class Controller {
         // TODO: call sort tasks function in backend
 
         // TODO: change destination fxml file to sorted schedule screen
+        /*
         AnchorPane panel = FXMLLoader.load(this.getClass().getResource("addTask.fxml"));
         mainPanel.getChildren().setAll(panel);
+        */
+
     }
 
 }

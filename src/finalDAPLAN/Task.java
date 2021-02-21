@@ -19,6 +19,11 @@ public class Task {
 
 
 	}
+
+	public Boolean getIsCompleted() {
+		return isCompleted;
+	}
+
 	//  will complete task
 	public void setIsCompleted(){
 

@@ -42,10 +42,14 @@ public class listPlan {
 	}
 
 	// will print all tasks added
-	public String printList() {
+	public void printList() {
 
-		return plan.toString();
+		for (Task t : plan) {
+			System.out.println(t.toString());
+		}
 	}
+
+
 
 	public void sort() {
 		Collections.sort(plan, new TaskC());
