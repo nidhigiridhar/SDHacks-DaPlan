@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Caveat";
+    src: url("Caveat-Regular.ttf");
+}
+
+.root {
+    -fx-font-family: "Caveat";
+    -fx-font-size: 16px;
+}

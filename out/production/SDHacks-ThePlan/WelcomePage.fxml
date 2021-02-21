@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="welcomePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: floralwhite; -fx-border-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LandingController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="91.0" prefWidth="357.0" style="-fx-background-image: url('/assets/da_plan_logo.png');" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#9a8781" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#9a8781" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you ready to have your schedule simplified?" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#runProgram" prefHeight="35.0" prefWidth="123.0" style="-fx-background-color: floralwhite; -fx-border-radius: 5em; -fx-background-radius: 5em; -fx-border-color: #6b54a1; -fx-border-width: 2;" text="Let's go!">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="aboutButton" layoutX="13.0" layoutY="13.0" mnemonicParsing="false" onAction="#goToAbout" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: floralwhite; -fx-border-radius: 5em; -fx-background-radius: 5em; -fx-border-color: #9a8781;" text="?" textFill="#9a8781" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <Glow />
+         </effect>
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip>
+         <tooltip>
+            <Tooltip text="About..." />
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SortedController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: floralwhite;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: floralwhite; -fx-border-radius: 5em; -fx-background-radius: 5em; -fx-border-color: #9a8781;" text="&lt;" textFill="#9a8781">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Take me back" />
+                     </tooltip>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@assets/da_plan_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#goToAbout" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: floralwhite; -fx-border-radius: 5em; -fx-background-radius: 5em; -fx-border-color: #9a8781;" text="?" textFill="#9a8781">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Empty Tooltip" />
+                     </tooltip>
+                     <tooltip>
+                        <Tooltip text="About..." />
+                     </tooltip>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="TOP_CENTER" style="-fx-background-color: #fffaf0;">
+                           <children>
+                              <Label fx:id="columnLabels" text="My Schedule:" textFill="#9a8781">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tableTasks" prefHeight="326.0" prefWidth="723.0" style="-fx-background-color: #fffaf0; -fx-border-width: 2;" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
