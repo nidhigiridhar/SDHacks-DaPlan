@@ -197,6 +197,7 @@ public class UnsortedController {
                 Main.schedule.addTask(t);
                 observableList.add(t);
 
+                // gets the current time and time at the end of the day
                 SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
                 String dateStart = new SimpleDateFormat("HH:mm:ss").format(new Date());
                 String dateStop = "23:59:59";
@@ -209,7 +210,7 @@ public class UnsortedController {
                     e.printStackTrace();
                 }
 
-                // Get msec from each, and subtract.
+                // Get msec from each, subtract both times to get difference in hours
                 long diff = d2.getTime() - d1.getTime();
                 long diffSeconds = diff / 1000 % 60;
                 long diffMinutes = diff / (60 * 1000) % 60;
